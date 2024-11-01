@@ -25,12 +25,12 @@ border: 2px solid gray; text-align: center; /* Centered text */ text-decoration:
  border-radius: 12px; /* Font size */ margin: 4px 2px; /* Margin */ cursor: pointer; /* Pointer cursor on hover */ } QPushButton:hover { background-color: #3C3D37; /* Grey on hover */ } </string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="LA_songname">
     <property name="geometry">
      <rect>
-      <x>310</x>
+      <x>20</x>
       <y>330</y>
-      <width>201</width>
+      <width>721</width>
       <height>71</height>
      </rect>
     </property>
@@ -42,7 +42,8 @@ border: 2px solid gray; text-align: center; /* Centered text */ text-decoration:
     </property>
     <property name="styleSheet">
      <string notr="true">color :rgb(0, 0, 0) ;
-font-family: Arial; font-size: 20px;</string>
+font-family: Arial; font-size: 20px;
+text-align: center ;</string>
     </property>
     <property name="text">
      <string>song name : </string>
@@ -51,8 +52,8 @@ font-family: Arial; font-size: 20px;</string>
    <widget class="QPushButton" name="PB_pause">
     <property name="geometry">
      <rect>
-      <x>370</x>
-      <y>480</y>
+      <x>380</x>
+      <y>490</y>
       <width>80</width>
       <height>61</height>
      </rect>
@@ -64,8 +65,8 @@ font-family: Arial; font-size: 20px;</string>
    <widget class="QPushButton" name="PB_play">
     <property name="geometry">
      <rect>
-      <x>280</x>
-      <y>480</y>
+      <x>290</x>
+      <y>490</y>
       <width>80</width>
       <height>61</height>
      </rect>
@@ -77,8 +78,8 @@ font-family: Arial; font-size: 20px;</string>
    <widget class="QPushButton" name="PB_random_music">
     <property name="geometry">
      <rect>
-      <x>460</x>
-      <y>490</y>
+      <x>470</x>
+      <y>500</y>
       <width>41</width>
       <height>41</height>
      </rect>
@@ -90,8 +91,8 @@ font-family: Arial; font-size: 20px;</string>
    <widget class="QPushButton" name="PB_repetition">
     <property name="geometry">
      <rect>
-      <x>230</x>
-      <y>490</y>
+      <x>240</x>
+      <y>500</y>
       <width>41</width>
       <height>41</height>
      </rect>
@@ -100,7 +101,7 @@ font-family: Arial; font-size: 20px;</string>
      <string>PushButton</string>
     </property>
    </widget>
-   <widget class="QFrame" name="frame">
+   <widget class="QFrame" name="frame_playlist">
     <property name="geometry">
      <rect>
       <x>9</x>
@@ -116,7 +117,7 @@ font-family: Arial; font-size: 20px;</string>
      <enum>QFrame::Raised</enum>
     </property>
    </widget>
-   <widget class="QFrame" name="frame_2">
+   <widget class="QFrame" name="frame_musics">
     <property name="geometry">
      <rect>
       <x>380</x>
@@ -132,13 +133,13 @@ font-family: Arial; font-size: 20px;</string>
      <enum>QFrame::Raised</enum>
     </property>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>0</x>
       <y>390</y>
       <width>741</width>
-      <height>89</height>
+      <height>71</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -198,12 +199,12 @@ font-family: Arial; font-size: 20px;</string>
      </item>
     </layout>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>130</x>
+      <x>10</x>
       <y>0</y>
-      <width>491</width>
+      <width>731</width>
       <height>57</height>
      </rect>
     </property>
@@ -232,6 +233,55 @@ font-family: Arial; font-size: 20px;</string>
       </widget>
      </item>
     </layout>
+   </widget>
+   <widget class="QSlider" name="volume_controler">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>510</y>
+      <width>160</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="LA_current_time">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>460</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color :rgb(0, 0, 0) ;
+font-family: Arial; font-size: 20px;
+text-align: center ;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="LA_total_time">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>460</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color :rgb(0, 0, 0) ;
+font-family: Arial; font-size: 20px;
+text-align: center ;</string>
+    </property>
+    <property name="text">
+     <string>total : </string>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
