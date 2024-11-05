@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>img/search_icon.ico</file>
+        <file>img/shuffle_icon.ico</file>
+        <file>img/repeat_icon.ico</file>
+    </qresource>
+</RCC>

@@ -46,7 +46,7 @@ font-family: Arial; font-size: 20px;
 text-align: center ;</string>
     </property>
     <property name="text">
-     <string>song name : </string>
+     <string/>
     </property>
    </widget>
    <widget class="QPushButton" name="PB_pause">
@@ -85,7 +85,7 @@ text-align: center ;</string>
      </rect>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string/>
     </property>
    </widget>
    <widget class="QPushButton" name="PB_repetition">
@@ -98,39 +98,7 @@ text-align: center ;</string>
      </rect>
     </property>
     <property name="text">
-     <string>PushButton</string>
-    </property>
-   </widget>
-   <widget class="QFrame" name="frame_playlist">
-    <property name="geometry">
-     <rect>
-      <x>9</x>
-      <y>59</y>
-      <width>351</width>
-      <height>291</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Raised</enum>
-    </property>
-   </widget>
-   <widget class="QFrame" name="frame_musics">
-    <property name="geometry">
-     <rect>
-      <x>380</x>
-      <y>60</y>
-      <width>361</width>
-      <height>291</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Raised</enum>
+     <string/>
     </property>
    </widget>
    <widget class="QWidget" name="layoutWidget">
@@ -199,41 +167,6 @@ text-align: center ;</string>
      </item>
     </layout>
    </widget>
-   <widget class="QWidget" name="layoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>0</y>
-      <width>731</width>
-      <height>57</height>
-     </rect>
-    </property>
-    <layout class="QHBoxLayout" name="horizontalLayout_2">
-     <item>
-      <widget class="QPushButton" name="PB_Add_playlist">
-       <property name="styleSheet">
-        <string notr="true">color :rgb(0, 0, 0)</string>
-       </property>
-       <property name="text">
-        <string>add new playlist</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLineEdit" name="LE_search"/>
-     </item>
-     <item>
-      <widget class="QPushButton" name="PB_Add_newsong">
-       <property name="styleSheet">
-        <string notr="true">color :rgb(0, 0, 0)</string>
-       </property>
-       <property name="text">
-        <string>add new music</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
    <widget class="QSlider" name="volume_controler">
     <property name="geometry">
      <rect>
@@ -280,8 +213,135 @@ font-family: Arial; font-size: 20px;
 text-align: center ;</string>
     </property>
     <property name="text">
-     <string>total : </string>
+     <string/>
     </property>
+   </widget>
+   <widget class="QPushButton" name="PB_Add_newsong">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>0</y>
+      <width>191</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color :rgb(0, 0, 0)</string>
+    </property>
+    <property name="text">
+     <string>add new music</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="PB_search">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>0</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>10</y>
+      <width>271</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border-radius: 12px;
+border: 2px solid gray;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="PB_Add_new_playlist">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>191</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color :rgb(0, 0, 0)</string>
+    </property>
+    <property name="text">
+     <string>add new music</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>59</y>
+      <width>361</width>
+      <height>291</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <item>
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>379</x>
+      <y>59</y>
+      <width>361</width>
+      <height>291</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="Layout_musics">
+     <item>
+      <spacer name="verticalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">

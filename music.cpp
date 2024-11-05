@@ -1,7 +1,7 @@
 #include "music.h"
 
-Music::Music(string name , string artist )
+Music::Music( QString name , QString song_path)
 {
     P_name = name ;
-    P_artist = artist ;
+    P_song_path = song_path ;
 }

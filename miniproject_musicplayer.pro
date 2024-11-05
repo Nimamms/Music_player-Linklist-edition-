@@ -35,3 +35,6 @@ HEADERS  += mainwindow.h \
     music.h
 
 FORMS    += mainwindow.ui
+
+RESOURCES += \
+    resorse_file.qrc
